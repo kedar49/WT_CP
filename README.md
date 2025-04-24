@@ -1,5 +1,10 @@
 # User Guide for the Application
 
+## Demo
+
+![Game Demo](.image.png)  
+*Example of the game interface showing a red space due to an invalid input.*
+
 ## What does it mean when the space turns red after entering a number?  
 This indicates that the input is incorrect for two reasons:  
 1. The input matches another value in the same row or column.  
@@ -10,6 +15,7 @@ Navigate to the main project directory (root folder) in the terminal, then execu
 
 ```bash
 npm i
+
 ```
 
 After completing the installation of dependencies, execute the next command:  

@@ -105,7 +105,7 @@ class Board extends Component {
   constructor(props) {
     super(props);
     this.filledSquares = 81;
-    let board = this.generateBoard(Array());
+    let board = this.generateBoard([]);
     let edgeBoard = JSON.parse(JSON.stringify(board));
     this.state = {
       incorrectValues: [],
@@ -155,6 +155,7 @@ class Board extends Component {
         <div>
           <button onClick={() => this.undo()}>Undo</button>
           <button onClick={() => this.solveSolution()}>Solve</button>
+          <button onClick={() => window.location.reload()}>New Game</button>
         </div>
       </div>
     );
@@ -207,7 +208,7 @@ class Board extends Component {
     let baseIndex = Math.floor(index / 27) * 27 + (index % 3);
     for (let i = baseIndex; i < baseIndex + 27; i += 3) {
       if (
-        index != i &&
+        index !== i &&
         squares[i] &&
         squares[i].value === target &&
         target &&
@@ -223,7 +224,7 @@ class Board extends Component {
     let baseIndex = Math.floor(index / 9) * 9;
     for (let i = baseIndex; i < baseIndex + 9; i++) {
       if (
-        index != i &&
+        index !== i &&
         squares[i] &&
         squares[i].value === target &&
         target &&
@@ -285,7 +286,7 @@ class Board extends Component {
     for (let i = 0; i < 9; i++) {
       let adjustedIndex = baseIndex + (i % 3) + Math.floor(i / 3) * 27;
       if (
-        index != adjustedIndex &&
+        index !== adjustedIndex &&
         squares[adjustedIndex] &&
         squares[adjustedIndex].value === target &&
         target
