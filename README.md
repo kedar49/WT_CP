@@ -2,7 +2,7 @@
 
 ## Demo
 
-![Game Demo](.image.png)  
+![Game Demo](/image.png)  
 *Example of the game interface showing a red space due to an invalid input.*
 
 ## What does it mean when the space turns red after entering a number?  
