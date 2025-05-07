@@ -1,0 +1,133 @@
+/* Authentication Styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.auth-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.auth-card h2 {
+  color: #ff8c00; /* Orange */
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-family: Arial, sans-serif;
+}
+
+.auth-error {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+.form-group input:focus {
+  border-color: #ff8c00; /* Orange */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.2);
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff8c00; /* Orange */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.auth-button:hover {
+  background-color: #ff7800; /* Darker orange */
+}
+
+.auth-button:disabled {
+  background-color: #ffcc80; /* Lighter orange */
+  cursor: not-allowed;
+}
+
+.auth-switch {
+  margin-top: 20px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.auth-link {
+  color: #ff8c00; /* Orange */
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.auth-link:hover {
+  color: #ff7800; /* Darker orange */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 20px;
+  }
+  
+  .auth-card h2 {
+    font-size: 24px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+  }
+  
+  .auth-button {
+    padding: 10px;
+  }
+} 

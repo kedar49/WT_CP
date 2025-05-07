@@ -1,0 +1,72 @@
+/* How To Play Styles */
+.how-to-play {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.how-to-play h2 {
+  color: #ff8c00; /* Orange */
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  position: relative;
+}
+
+.how-to-play h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #ff8c00; /* Orange */
+}
+
+.help-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.help-section h3 {
+  color: #ff8c00; /* Orange */
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.help-section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.help-section li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.help-section strong {
+  color: #ff8c00; /* Orange */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .help-section {
+    padding: 15px;
+  }
+  
+  .help-section h3 {
+    font-size: 18px;
+  }
+  
+  .help-section li {
+    font-size: 14px;
+  }
+} 

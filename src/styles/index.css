@@ -1,8 +1,18 @@
+/* Base styles */
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-  background-size: cover;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 ol,
